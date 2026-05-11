@@ -133,7 +133,7 @@ wire [1:0] osd_video_scanlines;
 wire       osd_joy_swap;        // 0=off, 1=on
 wire [2:0] osd_volume;          // Mute=0, 1=25%, 2=50%, 3=75%, 4=100%
 wire       osd_stereo_mix;      // 0=off, 1=on
-wire [1:0] osd_kickstart;       // 1=1.3, 2=3.1, 3=3.2, 4=DiagRom
+wire [1:0] osd_kickstart;       // 0=1.3, 1=3.1, 2=3.2
 wire 	   osd_drive_sounds;   	// 0 = disabled, 1 = enabled
 
 // generate a reset for some time after rom has been initialized
