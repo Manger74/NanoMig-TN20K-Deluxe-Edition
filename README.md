@@ -2,13 +2,13 @@
 
 Experimental version of the **NanoMig** for the **Tang Nano 20K** - with all the latest features enabled....
 
-    68020 CPU +cache
-    4 MB Fast Ram
-    Joy Swap
-    Volume Setting
-    Stereo Mix
-    Drive Sounds
-    Kick Switch Lite
+- 68020 CPU +cache
+- 4 MB Fast Ram
+- Joy Swap
+- Volume Setting
+- Stereo Mix (25/75)
+- Drive Sounds (HDD)
+- Kick Switch Lite (from flash memory)
 
 To use the **Kick Switch Lite**, the ROMs must be flashed like this:
 
