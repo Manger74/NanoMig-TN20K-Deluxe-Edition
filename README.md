@@ -12,10 +12,10 @@ Experimental version of the **NanoMig** for the **Tang Nano 20K** - with all the
 
 To use the **Kick Switch Lite**, the ROMs must be flashed like this:
 
-0x400000 Kickstart 3.1 / 512k (default)
-0x700000 Kickstart 1.3 / 256k (optional)
-0x740000 Kickstart 1.3 / 256k (optional)
-0x780000 Kickstart 3.2 / 512k (optional)
+0x400000 Kickstart 3.1 / 512k (default)  
+0x700000 Kickstart 1.3 / 256k (optional)  
+0x740000 Kickstart 1.3 / 256k (optional)  
+0x780000 Kickstart 3.2 / 512k (optional)  
 
 Please test and report issues!
 Thanks!
