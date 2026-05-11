@@ -1,12 +1,11 @@
 /*
     top.sv - Minimig on tang nano 20k toplevel
 
-For use of the KICK SWITCH LITE following pattern is required
+For use of the KICK SWITCH LITE following ROM flashes are required
 0x400000 Kickstart 3.1 / 512k (default)
-0x680000 Kickstart 1.3 / 256k (optional)
-0x6C0000 Kickstart 1.3 / 256k (optional)
-0x700000 Kickstart 3.2 / 512k (optional)
-0x780000 DiagRom 2.0 / 512k (optional) 
+0x700000 Kickstart 1.3 / 256k (optional)
+0x740000 Kickstart 1.3 / 256k (optional)
+0x780000 Kickstart 3.2 / 512k (optional)
 */
  
 module top(
@@ -599,11 +598,10 @@ always @(posedge clk_85m) begin
         osd_kickstartD <= osd_kickstart;
 
         case(osd_kickstart)
-             3'b01: flash_addr <= 22'h200000; // Kickstart 3.1 (at 4,0 MB)
-             3'b00: flash_addr <= 22'h340000; // Kickstart 1.3 (at 6,5 MB) 
-             3'b10: flash_addr <= 22'h380000; // Kickstart 3.2 (at 7,0 MB)
-             3'b11: flash_addr <= 22'h3C0000; // DiagROM 2.0   (at 7,5 MB)
-                default: flash_addr <= 22'h200000;
+            2'b01: flash_addr <= 22'h200000; // Kickstart 3.1 (at 4,0 MB)
+            2'b00: flash_addr <= 22'h380000; // Kickstart 1.3 (at 7,0 MB)
+            2'b10: flash_addr <= 22'h3C0000; // Kickstart 3.2 (at 7,5 MB)
+            default: flash_addr <= 22'h200000;
         endcase
 
         flash_ram_addr  <= {4'hf,18'h0};
@@ -623,11 +621,10 @@ always @(posedge clk_85m) begin
             osd_kickstartD <= osd_kickstart;
 
             case(osd_kickstart)
-                3'b01: flash_addr <= 22'h200000; // Kickstart 3.1 (at 4,0 MB)
-                3'b00: flash_addr <= 22'h340000; // Kickstart 1.3 (at 6,5 MB) 
-                3'b10: flash_addr <= 22'h380000; // Kickstart 3.2 (at 7,0 MB)
-                3'b11: flash_addr <= 22'h3C0000; // DiagROM 2.0   (at 7,5 MB)
-                default: flash_addr <= 22'h200000;
+	            2'b01: flash_addr <= 22'h200000; // Kickstart 3.1 (at 4,0 MB)
+	            2'b00: flash_addr <= 22'h380000; // Kickstart 1.3 (at 7,0 MB)
+	            2'b10: flash_addr <= 22'h3C0000; // Kickstart 3.2 (at 7,5 MB)
+	            default: flash_addr <= 22'h200000;
             endcase
 
             // reset State-Machine
@@ -659,7 +656,7 @@ always @(posedge clk_85m) begin
                cause a timeout during memory detection. The patch transforms a bne.b to a bra.b in the 
                Kickstart ROM, so the memory detection loop is executed on every reset. The patch is 
                applied to both the original and the mirror location of the code in the Kickstart ROM. */
-               if ((flash_addr == 22'h3400aa || flash_addr == 22'h3600aa) && flash_dout == 16'h6678)
+               if ((flash_addr == 22'h3800aa || flash_addr == 22'h3a00aa) && flash_dout == 16'h6678)
 				 // transform bne.b to bra.b in Kickstart ROM 1.2/1.3 @ $f80154 (mirror) and $fc0154
 				 // this forces memory detection on every reset
 				 flash_doutD <= flash_dout & 16'hf0ff;
