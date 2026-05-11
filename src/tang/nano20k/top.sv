@@ -851,14 +851,14 @@ always @(posedge clk_pixel) begin
         // always fits in 15 bit and is truncated safely on assignment. 
 	    case (osd_stereo_mix)
             1'b0: begin   // no mix
-                mixed_audio_left  <= audio_left;
-                mixed_audio_right <= audio_right;
+                mixed_audio_left  <= $signed(audio_left);
+                mixed_audio_right <= $signed(audio_right);
             end
             default: begin  // 75 / 25 blend
-                mixed_audio_left  <= (audio_left_s  - (audio_left_s  >>> 2))
-                                   + (audio_right_s >>> 2);
-                mixed_audio_right <= (audio_right_s - (audio_right_s >>> 2))
-                                   + (audio_left_s  >>> 2);
+                mixed_audio_left  <= 15'((audio_left_s  - (audio_left_s  >>> 2))
+                                   + (audio_right_s >>> 2));
+                mixed_audio_right <= 15'((audio_right_s - (audio_right_s >>> 2))
+                                   + (audio_left_s  >>> 2));
             end
         endcase
 
