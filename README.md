@@ -1,6 +1,24 @@
 # NanoMig TN20K Deluxe Edition
 
-Experimental version of the NanoMig for the Tang Nano 20K - with all the latest features enabled....
+Experimental version of the **NanoMig** for the **Tang Nano 20K** - with all the latest features enabled....
+
+    68020 CPU +cache
+    4 MB Fast Ram
+    Joy Swap
+    Volume Setting
+    Stereo Mix
+    Drive Sounds
+    Kick Switch Lite
+
+To use the **Kick Switch Lite**, the ROMs must be flashed like this:
+
+0x400000 Kickstart 3.1 / 512k (default)
+0x700000 Kickstart 1.3 / 256k (optional)
+0x740000 Kickstart 1.3 / 256k (optional)
+0x780000 Kickstart 3.2 / 512k (optional)
+
+Please test and report issues!
+Thanks!
 
 NanoMig is a port of the [Minimig](https://en.wikipedia.org/wiki/Minimig) Commodore Amiga FPGA implementation to the [Tang Nano 20K](https://wiki.sipeed.com/hardware/en/tang/tang-nano-20k/nano-20k.html), [Tang Primer 25K](https://wiki.sipeed.com/hardware/en/tang/tang-primer-25k/primer-25k.html), [Tang Mega 138K Pro](https://wiki.sipeed.com/hardware/en/tang/tang-mega-138k/mega-138k-pro.html) and [Tang Console with Mega 60k / 138k module](https://wiki.sipeed.com/hardware/en/tang/tang-console/mega-console.html) FPGA development boards.
 
