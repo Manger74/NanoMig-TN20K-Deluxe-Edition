@@ -1,6 +1,6 @@
 # NanoMig TN20K Deluxe Edition
 
-Experimental version of the **NanoMig** for the **Tang Nano 20K** - with all the latest features enabled....
+**Experimental** version of the **NanoMig** for the **Tang Nano 20K** - with all the latest features enabled....
 
 - 68020 CPU +cache
 - 4 MB Fast Ram
