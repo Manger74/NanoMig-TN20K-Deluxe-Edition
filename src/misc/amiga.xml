@@ -65,7 +65,7 @@
 		<listentry label="2MB" value="1"/>
 		<listentry label="4MB" value="2"/>
     </list>
-	<list label="IDE" id="I" default="1" action="reset">
+	<list label="IDE Controller" id="I" default="1" action="reset">
 		<listentry label="Disabled" value="0"/>
 		<listentry label="Enabled" value="1"/>
     </list>
