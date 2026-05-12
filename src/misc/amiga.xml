@@ -35,7 +35,7 @@
     </action>      
   </actions>
   
-  <menu label="NanoMig">
+  <menu label="NanoMig Deluxe Edition">
     <fileselector label="Floppy DF0:" ext="adf" index="0"/>
     <menu label="System"> //-------------------------------------SYSTEM---
     <list label="Chipset:" id="C" default="2" action="reset">
