@@ -1,0 +1,365 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/cache.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/uaddrPla.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/audio_clock_regeneration_packet.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/audio_info_frame.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/audio_sample_packet.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/auxiliary_video_information_info_frame.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/hdmi.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/packet_assembler.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/packet_picker.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/serializer.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/source_product_description_info_frame.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/tmds_channel.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_audiodma.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_beamcounter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_bitplanedma.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter_adrgen.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter_barrelshifter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter_fill.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter_minterm.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_copper.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_diskdma.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_refresh.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_spritedma.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/amiga_clk.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_int.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_timera.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_timerb.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_timerd.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciaa.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciab.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cpu_wrapper.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplane_shifter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplanes.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_collision.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_colortable.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_colortable_ram_mf.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_hamgenerator.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_playfields.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_spritepriority.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites_shifter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/gary.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/gayle.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ide.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig_bankmapper.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig_m68k_bridge.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig_sram_bridge.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig_syscontrol.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_channel.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_mixer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_volume.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_floppy.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_floppy_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_intcontroller.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_uart.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/userio.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/Amber.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/amiga_keymap.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/flash_dspi.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/hid.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/mcu_spi.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/osd_u8g2.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sd_card.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sd_rw.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sdcmd_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sdram.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sysctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/video_analyzer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/ws2812.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/drive_sounds.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/nanomig.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/amigaclks.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/gowin_dpb/ide_dpram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/gowin_dpb/sector_dpram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68K.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68K_ALU.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68K_Pack.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68KdotC_Kernel.vhd",
+   "Type" : "vhdl"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

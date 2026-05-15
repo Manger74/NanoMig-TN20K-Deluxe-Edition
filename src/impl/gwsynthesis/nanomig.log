@@ -1,0 +1,500 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\cache.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\fx68k\fx68k.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\fx68k\fx68kAlu.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\fx68k\uaddrPla.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_clock_regeneration_packet.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_info_frame.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_sample_packet.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\auxiliary_video_information_info_frame.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\hdmi.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_assembler.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_picker.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\serializer.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\source_product_description_info_frame.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\tmds_channel.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_audiodma.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_beamcounter.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_adrgen.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_barrelshifter.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_fill.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_minterm.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_copper.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_diskdma.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_refresh.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_spritedma.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\amiga_clk.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_int.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_timera.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_timerb.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_timerd.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\ciaa.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\ciab.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cpu_wrapper.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplane_shifter.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplanes.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_collision.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_colortable.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_colortable_ram_mf.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_hamgenerator.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_playfields.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_spritepriority.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_sprites.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_sprites_shifter.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\gary.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\gayle.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\ide.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_bankmapper.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_m68k_bridge.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_sram_bridge.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_syscontrol.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_channel.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_mixer.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_volume.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v'
+WARN  (EX2987) : Variable 'fd_dma_rd_ptr' must explicitly be declared as automatic or static("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":208)
+WARN  (EX2987) : Variable 'dbyte' must explicitly be declared as automatic or static("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":778)
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy_fifo.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_intcontroller.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\userio.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\Amber.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\amiga_keymap.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\flash_dspi.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\hid.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\mcu_spi.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\osd_u8g2.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_rw.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sdcmd_ctrl.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sdram.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sysctrl.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\video_analyzer.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\ws2812.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\drive_sounds.sv'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\amigaclks.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\gowin_dpb\ide_dpram.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\gowin_dpb\sector_dpram.v'
+Analyzing Verilog file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\top.sv'
+Analyzing VHDL file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K.vhd'
+Analyzing entity 'tg68k'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K.vhd":29)
+Analyzing architecture 'logic'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K.vhd":59)
+Analyzing VHDL file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_Pack.vhd'
+Analyzing package 'tg68k_pack'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_Pack.vhd":26)
+Analyzing VHDL file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd'
+Analyzing entity 'tg68k_alu'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":30)
+Analyzing architecture 'logic'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":80)
+Analyzing VHDL file 'C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd'
+Analyzing entity 'tg68kdotc_kernel'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd":107)
+Analyzing architecture 'logic'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd":145)
+WARN  (EX3073) : Port 'rsrc' remains unconnected for this instance("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\top.sv":295)
+WARN  (EX3073) : Port 'jtagsel' remains unconnected for this instance("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\top.sv":368)
+WARN  (EX3073) : Port 'cpu_nrst_out' remains unconnected for this instance("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\top.sv":551)
+Compiling module 'top'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\top.sv":11)
+Compiling module 'amigaclks'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\amigaclks.v":1)
+Compiling module 'ws2812'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\ws2812.v":1)
+Compiling module 'mcu_spi'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\mcu_spi.v":7)
+Compiling module 'sd_card(CLK_DIV=3'd0)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":13)
+Extracting RAM for identifier 'direct_start'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":144)
+Compiling module 'sector_dpram'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\gowin_dpb\sector_dpram.v":10)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":237)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":249)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":261)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":269)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":286)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":291)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":296)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":301)
+WARN  (EX2488) : Severity system task 'error' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":306)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":328)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":339)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":356)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":374)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":392)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":427)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":442)
+WARN  (EX3791) : Expression size 33 truncated to fit in target size 32("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":470)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":471)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v":489)
+Compiling module 'sd_rw(CLK_DIV=3'b000)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_rw.v":9)
+Extracting RAM for identifier 'data_crc'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_rw.v":116)
+Extracting RAM for identifier 'read_crc'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_rw.v":117)
+Compiling module 'sdcmd_ctrl'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sdcmd_ctrl.v":9)
+Compiling module 'hid'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\hid.v":7)
+Compiling module 'keymap'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\amiga_keymap.v":10)
+Compiling module 'sysctrl'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sysctrl.v":10)
+Extracting RAM for identifier 'amiga_xml'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sysctrl.v":84)
+Compiling module 'osd_u8g2'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\osd_u8g2.v":8)
+Extracting RAM for identifier 'buffer'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\osd_u8g2.v":80)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 12("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\osd_u8g2.v":61)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\osd_u8g2.v":62)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 8("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\osd_u8g2.v":119)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\osd_u8g2.v":120)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 7("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\osd_u8g2.v":121)
+WARN  (EX3073) : Port 'ovr' remains unconnected for this instance("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":1179)
+Compiling module 'nanomig'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":11)
+Extracting RAM for identifier 'cylinders'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":354)
+Extracting RAM for identifier 'total_sectors'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":361)
+Compiling module 'amiga_clk'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\amiga_clk.v":4)
+Compiling module 'cpu_wrapper'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cpu_wrapper.v":42)
+Switching to VHDL mode to elaborate design unit 'TG68KdotC_Kernel'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cpu_wrapper.v":225)
+Processing 'TG68KdotC_Kernel(sr_read=1,vbr_stackframe=1,extaddr_mode=1,mul_mode=1,div_mode=1,bitfield=1)(logic)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd":107)
+Extracting RAM for identifier 'regfile'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd":186)
+Processing 'TG68K_ALU(mul_mode=1,mul_hardware=1,div_mode=1,barrelshifter=1)(logic)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":30)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":666)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":682)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":731)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":741)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":790)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":807)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":823)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd":944)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd":858)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd":1944)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd":2625)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd":3179)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd":4066)
+'others' clause is never selected("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd":4098)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'IPL_autovector'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cpu_wrapper.v":211)
+Returning to Verilog mode to proceed with elaboration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cpu_wrapper.v":225)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 22("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":264)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":379)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":405)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":419)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":464)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":581)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":650)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 8("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":673)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 8("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":674)
+WARN  (EX3073) : Port 'toccata_ena' remains unconnected for this instance("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":814)
+WARN  (EX3073) : Port 'longword' remains unconnected for this instance("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":838)
+Compiling module 'minimig'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":149)
+Compiling module 'agnus'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus.v":54)
+Compiling module 'agnus_refresh'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_refresh.v":4)
+Compiling module 'agnus_diskdma'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_diskdma.v":5)
+Compiling module 'agnus_audiodma'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_audiodma.v":37)
+Extracting RAM for identifier 'audlch'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_audiodma.v":61)
+Extracting RAM for identifier 'audlcl'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_audiodma.v":62)
+Extracting RAM for identifier 'audpt'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_audiodma.v":64)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_audiodma.v":82)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_audiodma.v":89)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_audiodma.v":138)
+Compiling module 'agnus_bitplanedma'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":29)
+Extracting RAM for identifier 'bplpth'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":82)
+Extracting RAM for identifier 'bplptl'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":83)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":211)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":213)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":226)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":238)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":250)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":257)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":265)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":272)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":280)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":282)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":291)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":292)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":293)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":306)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":308)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":320)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":340)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":342)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":350)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":352)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":360)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":362)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":370)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":372)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":381)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":383)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":392)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":394)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":403)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":404)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":419)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":421)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":430)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":432)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":440)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v":442)
+Compiling module 'agnus_spritedma'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_spritedma.v":86)
+Extracting RAM for identifier 'sprpth'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_spritedma.v":111)
+Extracting RAM for identifier 'sprptl'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_spritedma.v":112)
+Extracting RAM for identifier 'sprpos'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_spritedma.v":113)
+Extracting RAM for identifier 'sprposh'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_spritedma.v":114)
+Extracting RAM for identifier 'sprctl'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_spritedma.v":115)
+Extracting RAM for identifier 'dmastate_mem'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_spritedma.v":130)
+Compiling module 'agnus_copper'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_copper.v":58)
+Compiling module 'agnus_blitter'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter.v":79)
+Compiling module 'agnus_blitter_barrelshifter'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_barrelshifter.v":6)
+Compiling module 'agnus_blitter_minterm'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_minterm.v":7)
+Compiling module 'agnus_blitter_fill'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_fill.v":7)
+Compiling module 'agnus_blitter_adrgen'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_adrgen.v":4)
+Extracting RAM for identifier 'bltpth'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_adrgen.v":45)
+Extracting RAM for identifier 'bltptl'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_adrgen.v":47)
+Extracting RAM for identifier 'bltmod'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_adrgen.v":52)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter.v":919)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter.v":922)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter.v":924)
+Compiling module 'agnus_beamcounter'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_beamcounter.v":27)
+Compiling module 'paula'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula.v":59)
+Compiling module 'paula_uart'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":4)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":40)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":53)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":62)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":80)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":81)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":82)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":83)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":84)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":89)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":93)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":97)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":99)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":100)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":102)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":104)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":109)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":115)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":117)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":120)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":122)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":123)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":127)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":132)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":136)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":139)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":159)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":160)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":161)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":162)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":163)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":168)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":172)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":173)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":175)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":184)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":186)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":188)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":191)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":194)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":198)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":205)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":207)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":211)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":215)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":217)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":219)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":222)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":225)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":230)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":234)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":236)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v":238)
+Compiling module 'paula_intcontroller'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_intcontroller.v":4)
+Compiling module 'paula_floppy'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":67)
+Extracting RAM for identifier 'dsktrack'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":129)
+Extracting RAM for identifier 'fd_dma_buf_even'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":191)
+Extracting RAM for identifier 'fd_dma_buf_odd'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":192)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 8("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":208)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":258)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":283)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":381)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":384)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":408)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":771)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":785)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":812)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":819)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":824)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":834)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":881)
+Compiling module 'paula_floppy_fifo'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy_fifo.v":8)
+Extracting RAM for identifier 'mem'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy_fifo.v":22)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":976)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":979)
+WARN  (EX3858) : System task 'display' is ignored for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v":982)
+Compiling module 'paula_audio'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio.v":109)
+Compiling module 'paula_audio_channel'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_channel.v":4)
+Compiling module 'paula_audio_mixer'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_mixer.v":6)
+Compiling module 'paula_audio_volume'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_volume.v":5)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_mixer.v":76)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_mixer.v":77)
+Compiling module 'userio'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\userio.v":28)
+WARN  (EX1998) : Net 'cd32pad' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\userio.v":88)
+WARN  (EX1998) : Net 'joy_swap' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\userio.v":89)
+WARN  (EX1998) : Net 'joy_ana_en' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\userio.v":103)
+Compiling module 'denise'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise.v":31)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise.v":139)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise.v":141)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise.v":164)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise.v":166)
+Compiling module 'denise_bitplanes'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplanes.v":26)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplanes.v":110)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplanes.v":142)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplanes.v":144)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplanes.v":151)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplanes.v":153)
+Compiling module 'denise_bitplane_shifter'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplane_shifter.v":27)
+Compiling module 'denise_playfields'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_playfields.v":8)
+Compiling module 'denise_sprites'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_sprites.v":24)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_sprites.v":100)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_sprites.v":102)
+Compiling module 'denise_sprites_shifter'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_sprites_shifter.v":9)
+Compiling module 'denise_spritepriority'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_spritepriority.v":5)
+Compiling module 'denise_colortable'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_colortable.v":7)
+Compiling module 'denise_colortable_ram_mf'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_colortable_ram_mf.v":3)
+Extracting RAM for identifier 'ram0'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_colortable_ram_mf.v":13)
+Extracting RAM for identifier 'ram1'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_colortable_ram_mf.v":14)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_colortable.v":52)
+Compiling module 'denise_hamgenerator'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_hamgenerator.v":6)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_hamgenerator.v":56)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_hamgenerator.v":61)
+Compiling module 'denise_collision'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_collision.v":4)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_collision.v":45)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_collision.v":47)
+Compiling module 'ciaa'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\ciaa.v":80)
+Compiling module 'cia_int'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_int.v":1)
+Compiling module 'cia_timera'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_timera.v":1)
+Compiling module 'cia_timerb'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_timerb.v":1)
+Compiling module 'cia_timerd'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_timerd.v":6)
+WARN  (EX3073) : Port 'spmode' remains unconnected for this instance("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\ciab.v":209)
+Compiling module 'ciab'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\ciab.v":4)
+Compiling module 'minimig_m68k_bridge'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_m68k_bridge.v":30)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_m68k_bridge.v":110)
+WARN  (EX2629) : Delay control is not supported for synthesis("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_m68k_bridge.v":111)
+Compiling module 'minimig_bankmapper'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_bankmapper.v":10)
+WARN  (EX3670) : Actual bit length 4 differs from formal bit length 2 for port 'memory_config'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":704)
+Compiling module 'minimig_sram_bridge'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_sram_bridge.v":8)
+WARN  (EX3670) : Actual bit length 23 differs from formal bit length 22 for port 'address'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":725)
+Compiling module 'gary'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\gary.v":49)
+WARN  (EX3073) : Port 'io_wait' remains unconnected for this instance("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\gayle.v":169)
+WARN  (EX3073) : Port 'io_wait' remains unconnected for this instance("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\gayle.v":200)
+Compiling module 'gayle'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\gayle.v":21)
+Compiling module 'ide'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\ide.v":31)
+Compiling module 'ide_dpram'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\gowin_dpb\ide_dpram.v":10)
+Compiling module 'minimig_syscontrol'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_syscontrol.v":17)
+WARN  (EX1998) : Net 'blver[1]' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":377)
+WARN  (EX1998) : Net 'cpurst' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":385)
+WARN  (EX1998) : Net 'cpuhlt' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":386)
+WARN  (EX1998) : Net 'usrrst' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":393)
+WARN  (EX1998) : Net 'host_cs' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":407)
+WARN  (EX1998) : Net 'host_adr[23]' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":408)
+WARN  (EX1998) : Net 'host_we' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":409)
+WARN  (EX1998) : Net 'host_bs[1]' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":410)
+WARN  (EX1998) : Net 'host_wdat[15]' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":411)
+WARN  (EX2565) : Input 'toccata_ena' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":814)
+WARN  (EX2565) : Input 'toccata_base[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":814)
+WARN  (EX2565) : Input 'toccata_base[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":814)
+WARN  (EX2565) : Input 'toccata_base[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":814)
+WARN  (EX2565) : Input 'toccata_base[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":814)
+WARN  (EX2565) : Input 'toccata_base[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":814)
+WARN  (EX2565) : Input 'toccata_base[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":814)
+WARN  (EX2565) : Input 'toccata_base[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":814)
+WARN  (EX2565) : Input 'toccata_base[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":814)
+WARN  (EX2565) : Input 'longword' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":838)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'ri'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":1115)
+WARN  (EX3670) : Actual bit length 64 differs from formal bit length 65 for port 'rtc'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":1131)
+Compiling module 'Amber'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\Amber.v":45)
+Extracting RAM for identifier 'lbf'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\Amber.v":149)
+Extracting RAM for identifier 'lbfd'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\Amber.v":160)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\Amber.v":121)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\Amber.v":131)
+WARN  (EX1998) : Net 'uart_cts' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":93)
+WARN  (EX1998) : Net 'uart_dsr' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":95)
+WARN  (EX2565) : Input 'fastchip_dout[15]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[14]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[13]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[12]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[11]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[10]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[9]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[8]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_dout[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+WARN  (EX2565) : Input 'fastchip_selack' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v":258)
+Compiling module 'sdram(DATA_WIDTH=32,RASCAS_DELAY=2,RAS_WIDTH=11,CAS_WIDTH=8)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sdram.sv":35)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 11("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sdram.sv":195)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sdram.sv":201)
+Compiling module 'cache'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\cache.v":3)
+Extracting RAM for identifier 'tagram'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\cache.v":103)
+Extracting RAM for identifier 'dataram'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\cache.v":171)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\cache.v":156)
+WARN  (EX3670) : Actual bit length 22 differs from formal bit length 23 for port 'cpu_addr'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\top.sv":762)
+Compiling module 'flash'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\flash_dspi.v":14)
+WARN  (EX3670) : Actual bit length 22 differs from formal bit length 23 for port 'address'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\top.sv":810)
+Compiling module 'video_analyzer'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\video_analyzer.v":7)
+Compiling module 'hdmi(AUDIO_RATE=48000,VENDOR_NAME=64'b0100110101101001010100110101010001101100011001010000000000000000,PRODUCT_DESCRIPTION=128'b01001110011000010110111001101111011011010110100101100111000000000000000000000000000000000000000000000000000000000000000000000000)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\hdmi.sv":8)
+Compiling module 'packet_picker(VIDEO_RATE=32000000.0,IT_CONTENT=1'b1,AUDIO_BIT_WIDTH=16,AUDIO_RATE=48000,VENDOR_NAME=64'b0100110101101001010100110101010001101100011001010000000000000000,PRODUCT_DESCRIPTION=128'b01001110011000010110111001101111011011010110100101100111000000000000000000000000000000000000000000000000000000000000000000000000,SOURCE_DEVICE_INFORMATION=8'b00000000)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_picker.sv":4)
+Extracting RAM for identifier 'audio_sample_word_buffer'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_picker.sv":80)
+Compiling module 'audio_clock_regeneration_packet(VIDEO_RATE=32000000.0,AUDIO_RATE=48000)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_clock_regeneration_packet.sv":5)
+Compiling module 'audio_sample_packet(SAMPLING_FREQUENCY=4'b0010,WORD_LENGTH=4'b0010)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_sample_packet.sv":8)
+WARN  (EX3780) : Using initial value of 'CHANNEL_LEFT' since it is never assigned("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_sample_packet.sv":63)
+WARN  (EX3780) : Using initial value of 'CHANNEL_RIGHT' since it is never assigned("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_sample_packet.sv":64)
+Compiling module 'auxiliary_video_information_info_frame(IT_CONTENT=1'b1)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\auxiliary_video_information_info_frame.sv":5)
+Compiling module 'source_product_description_info_frame(VENDOR_NAME=64'b0100110101101001010100110101010001101100011001010000000000000000,PRODUCT_DESCRIPTION=128'b01001110011000010110111001101111011011010110100101100111000000000000000000000000000000000000000000000000000000000000000000000000,SOURCE_DEVICE_INFORMATION=8'b00000000)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\source_product_description_info_frame.sv":5)
+Compiling module 'audio_info_frame'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_info_frame.sv":5)
+WARN  (EX1998) : Net 'headers[255][23]' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_picker.sv":29)
+WARN  (EX1998) : Net 'subs[255][3][55]' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_picker.sv":30)
+Compiling module 'packet_assembler'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_assembler.sv":4)
+Compiling module 'tmds_channel'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\tmds_channel.sv":4)
+Compiling module 'tmds_channel(CN=1)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\tmds_channel.sv":4)
+Compiling module 'tmds_channel(CN=2)'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\tmds_channel.sv":4)
+Compiling module 'serializer'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\serializer.sv":3)
+Compiling module 'drive_sound'("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\drive_sounds.sv":12)
+WARN  (EX1998) : Net 'capture_q[0]' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\top.sv":779)
+WARN  (EX1998) : Net 'capture_upd' does not have a driver("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\top.sv":780)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "audio_info_frame" instantiated to "audio_info_frame" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_picker.sv":142)
+WARN  (NL0002) : The module "audio_sample_packet" instantiated to "audio_sample_packet" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_picker.sv":131)
+WARN  (NL0002) : The module "auxiliary_video_information_info_frame" instantiated to "auxiliary_video_information_info_frame" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_picker.sv":136)
+WARN  (NL0002) : The module "source_product_description_info_frame" instantiated to "source_product_description_info_frame" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_picker.sv":139)
+WARN  (NL0002) : The module "keymap" instantiated to "keymap" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\hid.v":55)
+WARN  (NL0002) : The module "agnus_blitter_minterm" instantiated to "bltmt1" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter.v":449)
+WARN  (NL0002) : The module "agnus_refresh" instantiated to "ref1" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus.v":288)
+WARN  (NL0002) : The module "minimig_bankmapper" instantiated to "BMAP1" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":706)
+WARN  (NL0002) : The module "denise_playfields" instantiated to "plfm0" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise.v":344)
+WARN  (NL0002) : The module "paula_audio_volume" instantiated to "sv0" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_mixer.v":34)
+WARN  (NL0002) : The module "paula_audio_volume" instantiated to "sv1" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_mixer.v":46)
+WARN  (NL0002) : The module "paula_audio_volume" instantiated to "sv2" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_mixer.v":58)
+WARN  (NL0002) : The module "paula_audio_volume" instantiated to "sv3" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_mixer.v":70)
+WARN  (NL0002) : The module "minimig_sram_bridge" instantiated to "RAM1" is swept in optimizing("C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v":728)
+[95%] Generate netlist file "C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\impl\gwsynthesis\nanomig.vg" completed
+WARN  (CK3000) : Can't calculate clocks' relationship between: "clk_audio" and "amigaclks/clkdiv_inst/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "mcu/n4_24" and "amigaclks/sysclk_inst/CLKOUTD3.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "amigaclks/sysclk_inst/CLKOUTD3.default_gen_clk" and "mcu/n4_24"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "amigaclks/clkdiv_inst/CLKOUT.default_gen_clk" and "clk_audio"
+[100%] Generate report file "C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\impl\gwsynthesis\nanomig_syn.rpt.html" completed
+GowinSynthesis finish

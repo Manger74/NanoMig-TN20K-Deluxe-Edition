@@ -1,0 +1,38 @@
+Reading netlist file: "C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\impl\gwsynthesis\nanomig.vg"
+Parsing netlist file "C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\impl\gwsynthesis\nanomig.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\nanomig.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1123) : the clock "clk_spi"'s frequency does not match amigaclks/sysclk_inst/CLKOUTP's 
+WARN  (TA1132) :  'mcu/n4_24' was determined to be a clock but was not created.
+WARN  (TA1132) :  'clk_audio' was determined to be a clock but was not created.
+WARN  (TA1132) :  'amigaclks/clkdiv_inst/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
+WARN  (TA1117) : Can't calculate clocks' relationship between: "clk28" and "amigaclks/clkdiv_inst/CLKOUT.default_gen_clk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "mcu/n4_24" and "clk28"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "clk28" and "mcu/n4_24"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "clk28" and "clk_hdmi"
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\impl\pnr\nanomig.power.html" completed
+Generate file "C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\impl\pnr\nanomig.pin.html" completed
+Generate file "C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\impl\pnr\nanomig.rpt.html" completed
+Generate file "C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\impl\pnr\nanomig.rpt.txt" completed
+Generate file "C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\impl\pnr\nanomig.tr.html" completed
+Fri May 15 09:34:51 2026
+

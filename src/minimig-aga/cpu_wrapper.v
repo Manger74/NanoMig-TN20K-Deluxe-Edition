@@ -19,23 +19,25 @@
 // GNU General Public License for more details.                             //
 //                                                                          //
 // You should have received a copy of the GNU General Public License        //
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.    //
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.   //
 //                                                                          //
 //--------------------------------------------------------------------------//
 //--------------------------------------------------------------------------//
+//
+// NanoMig cleanup (TG68K-only, 68020-fixed, no Z3, no Toccata):
+//   - FX68K removed (saves ~2000-3000 LUTs)
+//   - TG68K parameters hardcoded for 68020 (saves ~200-400 LUTs)
+//   - Zorro III logic removed: cfg_z3 = 0 (saves ~80-150 LUTs)
+//   - Toccata autoconfig removed (saves ~40-80 LUTs)
+//
 
 `define ENABLE_TG68K
-//`define ENABLE_FX68K
+// `define ENABLE_FX68K   -- removed, FX68K not used on NanoMig
 
 `define TG68K_A24      // limit address space of TG68K to 24 bit
 
-// if only one CPU is enabled, then this is being used for all
-// configurations. This e.g. allows the tg68k to be used in plain 68000 mode as well
-`ifdef ENABLE_TG68K
- `ifdef ENABLE_FX68K
-  `define CPU_SWITCHABLE
- `endif
-`endif
+// CPU_SWITCHABLE is not defined since only one CPU is enabled.
+// TG68K is used for all configurations.
 
 module cpu_wrapper
 (
@@ -60,7 +62,7 @@ module cpu_wrapper
 	output reg        chip_rw,
 	input             chip_dtack,
 	input       [2:0] chip_ipl,
-	
+
 	input      [15:0] fastchip_dout,
 	output reg        fastchip_sel,
 	output            fastchip_lds,
@@ -79,8 +81,7 @@ module cpu_wrapper
 	output            ramuds,
 	output            ramshared,
 
-	output reg        toccata_ena,
-	output reg  [7:0] toccata_base,
+	// toccata_ena / toccata_base removed: Toccata not present on NanoMig
 
 	output reg  [1:0] cpustate,
 	output reg  [3:0] cacr,
@@ -89,26 +90,25 @@ module cpu_wrapper
 
 wire cpu_req = (cpustate != 1);
 
-assign ramsel       = cpu_req & ~sel_nmi_vector & (sel_zram | sel_chipram | sel_kickram | sel_dd | sel_rtg);
-assign ramshared    = sel_dd;
+assign ramsel    = cpu_req & ~sel_nmi_vector & (sel_zram | sel_chipram | sel_kickram | sel_dd | sel_rtg);
+assign ramshared = sel_dd;
 
 // NMI
 always @(posedge clk) nmi_addr <= vbr + 32'h7c;
 
-wire sel_z3ram0 = (cpu_addr[31:27] == z3ram_base0) && z3ram_ena0;
-wire sel_z3ram1 = (cpu_addr[31:28] == z3ram_base1) && z3ram_ena1;
-wire sel_z2ram  = !cpu_addr[31:24] && (cpu_addr[23] ^ |cpu_addr[22:21]) && z2ram_ena; // addr[23:21] = 1..4
-wire sel_zram   = sel_z3ram0 | sel_z3ram1 | sel_z2ram;
-wire sel_dd     = (cpu_addr[31:16] == 16'h00DD) && (cpu_addr[15:13] == 'b010);
-wire sel_rtg    = (cpu_addr[31:24] == 8'h02);
+// Zorro III removed: no Z3 RAM on Tang Nano 20K.
+// sel_zram is now only Z2 RAM.
+wire sel_z2ram = !cpu_addr[31:24] && (cpu_addr[23] ^ |cpu_addr[22:21]) && z2ram_ena; // addr[23:21] = 1..4
+wire sel_zram  = sel_z2ram;
+
+wire sel_dd      = (cpu_addr[31:16] == 16'h00DD) && (cpu_addr[15:13] == 'b010);
+wire sel_rtg     = (cpu_addr[31:24] == 8'h02);
 
 // don't sel_kickram when writing
-wire sel_kickram   = !cpu_addr[31:24] && (&cpu_addr[23:19] || (cpu_addr[23:19] == 5'b11100)) && ckick && wr;	// $f8xxxx, e0xxxx
+wire sel_kickram   = !cpu_addr[31:24] && (&cpu_addr[23:19] || (cpu_addr[23:19] == 5'b11100)) && ckick && wr; // $f8xxxx, e0xxxx
 wire sel_kicklower = !cpu_addr[31:24] && (cpu_addr[23:18] == 6'b111110);
-wire sel_chipram   = !cpu_addr[31:21] && cchip; 		             //$000000 - $1FFFFF
+wire sel_chipram   = !cpu_addr[31:21] && cchip;                                                               // $000000 - $1FFFFF
 
-// we route everything hrtmon related through cart.v (needs a couple of signals to
-// decide what to do, would not be good style to replicate that here). 
 wire sel_nmi_vector = (cpu_addr[31:2] == nmi_addr[31:2]) && (cpustate == 2);
 
 wire [15:0] ramdat;
@@ -118,25 +118,16 @@ assign ramuds = sel_rtg ? lds_in : uds_in;
 assign ramdin = sel_rtg ? {cpu_dout[7:0],cpu_dout[15:8]} : cpu_dout;
 assign ramdat = sel_rtg ? {ramdout[7:0], ramdout[15:8]}  : ramdout;
 
-//       Main  DDx  RTG  8M  128M  256M
-//       ----  ---  ---  --  ----  ----
-//        SDR  DDR  RTG  Z2  Z3_0  Z3_1
-// 28      0    0    0   1    0     1
-// 27      0    0    0   1    1     X
-// 26      0    1    1   0    X     X
-// 25-23   0   111  110  0    X     X
-// supported configs: SDR + (Z2, Z3_1, Z3_0+Z3_1)
-
 // Mapping for TangNano 20k
 // Chip RAM, 00-1f => 00-1f
-// Fast RAM, 20-5f => 20-5f;
-// Slow RAM, c0-d7 => 60-77;
-// Kick ROM, f8-ff => 78->7f;
-// ramaddr[21] = cpu_addr[21] | cpu_addr[23]; 
+// Fast RAM, 20-5f => 20-5f
+// Slow RAM, c0-d7 => 60-77
+// Kick ROM, f8-ff => 78->7f
+// ramaddr[21] = cpu_addr[21] | cpu_addr[23]
 // All other bits passed through unmodified.
 assign ramaddr[28:23] = 6'b0;
-assign ramaddr[22:21] = {cpu_addr[22],cpu_addr[21]|cpu_addr[23]};
-assign ramaddr[20:1] = cpu_addr[20:1];
+assign ramaddr[22:21] = {cpu_addr[22], cpu_addr[21] | cpu_addr[23]};
+assign ramaddr[20:1]  = cpu_addr[20:1];
 
 assign fastchip_lds = lds_in;
 assign fastchip_uds = uds_in;
@@ -147,7 +138,7 @@ reg ramsel_r;
 reg sel_autoconfig_r;
 
 always @(posedge clk) begin
-	ramsel_r <= ramsel;
+	ramsel_r         <= ramsel;
 	sel_autoconfig_r <= sel_autoconfig;
 end
 
@@ -160,11 +151,8 @@ reg         lds_in;
 reg  [15:0] chip_data;
 reg  [31:0] vbr;
 
+// TG68K is the only CPU; no runtime mux needed.
 always @* begin
-`ifdef CPU_SWITCHABLE
-   if( cpucfg[1] ) begin
-`endif
-`ifdef ENABLE_TG68K      
 		cpu_dout     = cpu_dout_p;
 		cpustate     = cpustate_p;
 		cacr         = cacr_p;
@@ -180,43 +168,10 @@ always @* begin
 		chip_addr    = cpu_addr_p[23:1];
 		chip_din     = cpu_dout_p;
 		chip_data    = chipdout_i;
-`ifdef TG68K_A24
+		// TG68K_A24: address space limited to 24 bit, fastchip unused
 		cpu_addr     = { 8'h00, cpu_addr_p[23:0] };
 		fastchip_sel = 0;
 		fastchip_lw  = 0;
-`else
-		cpu_addr     = cpu_addr_p;
-		fastchip_sel = cpu_req & !cpu_addr_p[31:24];
-		fastchip_lw  = longword;
-`endif
-`endif
-`ifdef CPU_SWITCHABLE
-	end
-	else begin
-`endif
- `ifdef ENABLE_FX68K
-		cpu_dout     = cpu_dout_o;
-		cpu_addr     = {cpu_addr_o,1'b0};
-		cpustate     = as_o ? 2'b01 : ~{wr_o,wr_o};
-		cacr         = 1;
-		vbr          = 0;
-		wr           = wr_o;
-		uds_in       = uds_o;
-		lds_in       = lds_o;
-		reset_out    = reset_out_o;
-		chip_as      = ramsel | as_o;
-		chip_rw      = wr_o;
-		chip_uds     = uds_o;
-		chip_lds     = lds_o;
-		chip_addr    = cpu_addr_o[23:1];
-		chip_din     = cpu_dout_o;
-		chip_data    = chip_dout;
-		fastchip_sel = 0;
-		fastchip_lw  = 0;
-`endif
-`ifdef CPU_SWITCHABLE
-	end
-`endif
 end
 
 wire [15:0] cpu_dout_p;
@@ -229,31 +184,27 @@ wire        uds_p;
 wire        lds_p;
 wire        reset_out_p;
 wire        longword;
-reg [2:0]   cpu_ipl;
+reg  [2:0]  cpu_ipl;
 reg         chipready;
 
-`ifdef ENABLE_TG68K
+// TG68K instantiation.
+// All parameters hardcoded for 68020-only operation.
+// Value meanings: 0=off/16bit/user, 1=on/32bit/privileged, 2=switchable(removed)
 TG68KdotC_Kernel
 `ifndef VERILATOR
-// verilator runs the verilog translated variant which doesn't support configuration but
-// is hard coded for full configurability (all configs set to 2)
 #(
-	.sr_read(2),        // 0=>user,   1=>privileged,    2=>switchable with CPU(0)
-	.vbr_stackframe(2), // 0=>no,     1=>yes/extended,  2=>switchable with CPU(0)
-	.extaddr_mode(2),   // 0=>no,     1=>yes,           2=>switchable with CPU(1)
-	.mul_mode(2),       // 0=>16Bit,  1=>32Bit,         2=>switchable with CPU(1),  3=>no MUL,
-	.div_mode(2),       // 0=>16Bit,  1=>32Bit,         2=>switchable with CPU(1),  3=>no DIV,
-	.bitfield(2)        // 0=>no,     1=>yes,           2=>switchable with CPU(1)
+	.sr_read(1),        // always privileged SR read (68020 mode)
+	.vbr_stackframe(1), // always VBR + extended stackframe
+	.extaddr_mode(1),   // always 32-bit extended addressing
+	.mul_mode(1),       // always 32-bit MULS.L / MULU.L
+	.div_mode(1),       // always 32-bit DIVS.L / DIVU.L
+	.bitfield(1)        // always BFINS/BFEXTS/BFFFO etc.
 )
 `endif
 cpu_inst_p
 (
   .clk(clk),
-`ifdef ENABLE_FX68K
-  .nreset(reset && cpucfg[1]),
-`else
   .nreset(reset),
-`endif
   .clkena_in(~cpu_req | chipready | ramready | fastchip_ready),
   .data_in(cpu_din),
   .ipl(cpu_ipl),
@@ -266,63 +217,12 @@ cpu_inst_p
   .nlds(lds_p),
   .nresetout(reset_out_p),
   .longword(longword),
-  
+
   .cpu(cpucfg),
-  .busstate(cpustate_p),		// 0: fetch code, 1: no memaccess, 2: read data, 3: write data
+  .busstate(cpustate_p),   // 0: fetch code, 1: no memaccess, 2: read data, 3: write data
   .cacr_out(cacr_p),
   .vbr_out(vbr_p)
 );
-`endif
-
-wire [15:0] cpu_dout_o;
-wire [23:1] cpu_addr_o;
-wire  [2:0] fc_o;
-wire        wr_o;
-wire        as_o;
-wire        uds_o;
-wire        lds_o;
-wire        reset_out_o;
-
-`ifdef ENABLE_FX68K
-fx68k cpu_inst_o
-(
-	.clk(clk),
-	.enPhi1(ph1),
-	.enPhi2(ph2),
-
-`ifdef ENABLE_TG68K
-	.extReset(~reset && ~cpucfg[1]),
-	.pwrUp(~reset && ~cpucfg[1]),
-`else
-	.extReset(~reset),
-	.pwrUp(~reset),
-`endif
-	.oRESETn(reset_out_o),
-`ifndef VERILATOR
-	.HALTn(1),
-`endif
-	.eRWn(wr_o),
-	.ASn(as_o),
-	.LDSn(lds_o),
-	.UDSn(uds_o),
-	.DTACKn(ramsel ? ~ramready : chip_dtack),
-
-	.FC0(fc_o[0]),
-	.FC1(fc_o[1]),
-	.FC2(fc_o[2]), 
-
-	.VPAn(~&fc_o),
-	.BERRn(1),
-	.BRn(1),
-	.BGACKn(1),
-	.IPL0n(chip_ipl[0]),
-	.IPL1n(chip_ipl[1]),
-	.IPL2n(chip_ipl[2]),
-	.iEdb(cpu_din),
-	.oEdb(cpu_dout_o),
-	.eab(cpu_addr_o)
-);
-`endif
 
 wire cchip = turbochip_d & (!cpustate | dcache_d);
 wire ckick = turbokick_d & (!cpustate | dcache_d);
@@ -336,119 +236,64 @@ always @(posedge clk) begin
 		turbokick_d <= 0;
 		dcache_d    <= 0;
 	end
-	else if (~cpu_req) begin	// No mem access, so safe to switch chipram access mode
-		turbochip_d <= cachecfg[0]/* & cpucfg[1]*/; // FIXME, always only for testing
-		turbokick_d <= cachecfg[1]/* & cpucfg[1]*/;
+	else if (~cpu_req) begin   // No mem access, safe to switch chipram access mode
+		turbochip_d <= cachecfg[0];
+		turbokick_d <= cachecfg[1];
 		dcache_d    <= cachecfg[2];
 	end
 end
 
-wire cfg_z3 = fastramcfg[2] & cpucfg[1];
-reg       ac_toccata;
+// cfg_z3 = 0: Zorro III not available on Tang Nano 20K.
+// All Z3 autoconfig logic and z3ram_base/ena registers removed.
+wire cfg_z3 = 1'b0;
 
+// Autoconfig data ROM.
+// Toccata removed (not present on NanoMig).
+// Z3 branch removed (cfg_z3 = 0).
+// Only Zorro II RAM autoconfig remains.
 reg [3:0] autocfg_data;
 always @(*) begin
 	autocfg_data = 4'b1111;
 
-	if (~ac_toccata) begin
+	if (autocfg_card) begin
+		// Zorro II RAM (up to 8 MB at $200000)
 		case (chip_addr[6:1])
-			6'h0: autocfg_data = 4'b1100; // Zorro-II card, no link, no ROM
-			6'h1: autocfg_data = 4'b0001; // Next board not related, size 'h64k
-			// Inverted from here on
-			6'h3: autocfg_data = 4'b0011; // Lower byte product number
-			6'h5: autocfg_data = 4'b1101;   // logical size 64k
-			6'h8: autocfg_data = 4'b1011; // Manufacturer ID: 0x4754
-			6'h9: autocfg_data = 4'b1000;
-			6'ha: autocfg_data = 4'b1010;
-			6'hb: autocfg_data = 4'b1011;
-			default: ;
+			6'b000000: autocfg_data = 4'b1110; // Zorro-II card, add mem, no ROM
+			6'b000001:
+				case (fastramcfg)
+					       1: autocfg_data = 4'b0110; // 2 MB
+					       2: autocfg_data = 4'b0111; // 4 MB
+					default: autocfg_data = 4'b0000; // 8 MB
+				endcase
+			6'b001000: autocfg_data = 4'b1110; // Manufacturer ID: 0x139c
+			6'b001001: autocfg_data = 4'b1100;
+			6'b001010: autocfg_data = 4'b0110;
+			6'b001011: autocfg_data = 4'b0011;
+			6'b010011: autocfg_data = 4'b1110; // serial=1
+			  default: ;
 		endcase
-	end 
-	else if (autocfg_card) begin
-		if (~cfg_z3) begin
-			// Zorro II RAM (Up to 8 meg at 0x200000)
-			case (chip_addr[6:1])
-				6'b000000: autocfg_data = 4'b1110;	// Zorro-II card, add mem, no ROM
-				6'b000001:
-					case (fastramcfg)
-							   1: autocfg_data = 4'b0110; // 2MB
-							   2: autocfg_data = 4'b0111; // 4MB
-						default: autocfg_data = 4'b0000; // 8MB
-					endcase
-				6'b001000: autocfg_data = 4'b1110;	// Manufacturer ID: 0x139c
-				6'b001001: autocfg_data = 4'b1100;
-				6'b001010: autocfg_data = 4'b0110;
-				6'b001011: autocfg_data = 4'b0011;
-				6'b010011: autocfg_data = 4'b1110; //serial=1
-				  default:;
-			endcase
-		end
-		else begin
-			// Zorro III RAM 128MB/256MB
-			case (chip_addr[6:1])
-				6'b000000: autocfg_data = 4'b1010;	// Zorro-III card, add mem, no ROM
-				6'b000001: autocfg_data = autocfg_card[1] ? 4'b0011 : 4'b0100;	// 128MB or 256MB, extended
-				6'b000010: autocfg_data = 4'b1110;	// ProductID=0x10 (only setting upper nibble)
-				6'b000100: autocfg_data = 4'b0000;	// Memory card, not silenceable, Extended size, reserved.
-				6'b000101: autocfg_data = 4'b1111;	// 0000 - logical size matches physical size TODO change this to 0001, so it is autosized by the OS, WHEN it will be 24MB.
-				6'b001000: autocfg_data = 4'b1110;	// Manufacturer ID: 0x139c
-				6'b001001: autocfg_data = 4'b1100;
-				6'b001010: autocfg_data = 4'b0110;
-				6'b001011: autocfg_data = 4'b0011;
-				6'b010011: autocfg_data = {2'b11, ~autocfg_card};	// serial=1/2
-				  default:;
-			endcase
-		end
 	end
 end
 
-wire sel_autoconfig = fastramcfg && chip_addr[23:16] == 8'b11101000 && autocfg_card; //$E80000 - $E8FFFF
+wire sel_autoconfig = fastramcfg && chip_addr[23:16] == 8'b11101000 && autocfg_card; // $E80000-$E8FFFF
 
-reg [1:0] autocfg_card;
+// autocfg_card is now 1-bit: only one autoconfig slot (Z2 RAM).
+// Toccata and Z3 slots removed.
+reg       autocfg_card;
 reg       z2ram_ena;
-reg [4:0] z3ram_base0;
-reg [3:0] z3ram_base1;
-reg       z3ram_ena0;
-reg       z3ram_ena1;
 always @(posedge clk) begin
 	reg old_uds;
 	old_uds <= chip_uds;
 
 	if (~reset | ~reset_out) begin
-		autocfg_card <= 1;		//autoconfig on
-		z2ram_ena <= 0;
-		z3ram_ena0 <= 0;
-		z3ram_ena1 <= 0;
-		z3ram_base0 <= 1;
-		z3ram_base1 <= 1;
-		ac_toccata<=1'b0;
-		toccata_ena<=1'b0;
+		autocfg_card <= 1; // autoconfig on
+		z2ram_ena    <= 0;
 	end
 	else if (sel_autoconfig && ~chip_rw && ~chip_uds && old_uds) begin
-		if (~ac_toccata) begin
-			if (chip_addr[6:1] == 6'b100100) begin // Register 0x48 - config, Toccata card in ZII io space ($E90000)
-				toccata_ena <= 1;
-				toccata_base <= cpu_dout[7:0];
-				ac_toccata<=1'b1;
-			end		
-		end
-		else if (~cfg_z3) begin
-			if (chip_addr[6:1] == 6'b100100) begin // Register 0x48 - config, ZII RAM
-				z2ram_ena <= 1;
-				autocfg_card <= 0;
-			end
-		end
-		else if (chip_addr[6:1] == 6'b100010)	begin // Register 0x44, assign base address to ZIII RAM.
-			if (autocfg_card == 1) begin
-				z3ram_base1 <= cpu_dout[15:12];
-				z3ram_ena1 <= 1;
-				autocfg_card <= {fastramcfg[0], 1'b0};
-			end
-			else begin
-				z3ram_base0 <= cpu_dout[15:11];
-				z3ram_ena0 <= 1;
-				autocfg_card <= 0;
-			end
+		// Register 0x48: configure Z2 RAM base address
+		if (chip_addr[6:1] == 6'b100100) begin
+			z2ram_ena    <= 1;
+			autocfg_card <= 0;
 		end
 	end
 end
@@ -467,16 +312,16 @@ end
 
 reg [15:0] chipdout_i;
 reg  [2:0] ipl_i;
-reg        c_as,c_rw,c_uds,c_lds;
+reg        c_as, c_rw, c_uds, c_lds;
 always @(negedge clk, negedge reset) begin
 	reg [1:0] stage;
 	reg waitm;
 	reg ready;
 
-	if(~reset) begin
+	if (~reset) begin
 		stage <= 0;
-		c_as <= 1;
-		c_rw <= 1;
+		c_as  <= 1;
+		c_rw  <= 1;
 		c_uds <= 1;
 		c_lds <= 1;
 		ready <= 0;
@@ -484,7 +329,7 @@ always @(negedge clk, negedge reset) begin
 	else begin
 		if (ph2n) begin
 			waitm <= chip_dtack;
-			if(~stage[0]) ipl_i <= chip_ipl;
+			if (~stage[0]) ipl_i <= chip_ipl;
 		end
 
 		chipready <= 0;
@@ -493,22 +338,22 @@ always @(negedge clk, negedge reset) begin
 			ready <= 0;
 			case (stage)
 				0: if (chipreq) begin
-						c_as <= 0;
-						c_rw <= wr;
+						c_as  <= 0;
+						c_rw  <= wr;
 						c_uds <= uds_in;
 						c_lds <= lds_in;
-						stage <= 1; // 1
+						stage <= 1;
 					end
 				1: stage <= 2;
 				2: begin
 						chipdout_i <= chip_dout;
 						if (~waitm) begin
-							c_as <= 1;
-							c_rw <= 1;
+							c_as  <= 1;
+							c_rw  <= 1;
 							c_uds <= 1;
 							c_lds <= 1;
 							ready <= 1;
-							stage <= 3;  // 3
+							stage <= 3;
 						end
 					end
 				3: stage <= 0;

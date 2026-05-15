@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2AR-18C" package="QFN88" speed="8" partNumber="GW2AR-LV18QN88C8/I7"/>
+    <FileList>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\cache.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\fx68k\fx68k.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\fx68k\fx68kAlu.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\fx68k\uaddrPla.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_clock_regeneration_packet.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_info_frame.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\audio_sample_packet.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\auxiliary_video_information_info_frame.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\hdmi.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_assembler.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\packet_picker.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\serializer.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\source_product_description_info_frame.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\hdmi\tmds_channel.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_audiodma.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_beamcounter.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_bitplanedma.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_adrgen.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_barrelshifter.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_fill.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_blitter_minterm.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_copper.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_diskdma.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_refresh.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\agnus_spritedma.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\amiga_clk.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_int.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_timera.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_timerb.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cia_timerd.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\ciaa.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\ciab.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\cpu_wrapper.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplane_shifter.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_bitplanes.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_collision.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_colortable.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_colortable_ram_mf.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_hamgenerator.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_playfields.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_spritepriority.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_sprites.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\denise_sprites_shifter.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\gary.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\gayle.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\ide.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_bankmapper.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_m68k_bridge.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_sram_bridge.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\minimig_syscontrol.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_channel.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_mixer.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_audio_volume.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_floppy_fifo.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_intcontroller.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\paula_uart.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\userio.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\minimig-aga\Amber.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\amiga_keymap.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\flash_dspi.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\hid.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\mcu_spi.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\osd_u8g2.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_card.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sd_rw.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sdcmd_ctrl.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sdram.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\sysctrl.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\video_analyzer.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\ws2812.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\misc\drive_sounds.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\nanomig.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\amigaclks.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\gowin_dpb\ide_dpram.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\gowin_dpb\sector_dpram.v" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tang-nano20K\top.sv" type="verilog"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K.vhd" type="vhdl"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_ALU.vhd" type="vhdl"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68K_Pack.vhd" type="vhdl"/>
+        <File path="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\tg68k\TG68KdotC_Kernel.vhd" type="vhdl"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="C:\GitHub\NanoMig-TN20K-Deluxe-Edition\src\impl\gwsynthesis\nanomig.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="top"/>
+        <Option type="vcc" value="1.0"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

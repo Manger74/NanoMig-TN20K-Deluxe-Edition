@@ -1,0 +1,1188 @@
+[
+ {
+  "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+  "InstLine" : 136,
+  "InstName" : "fx68k",
+  "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+  "ModuleLine" : 136,
+  "ModuleName" : "fx68k",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "InstLine" : 253,
+    "InstName" : "microToNanoAddr",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "ModuleLine" : 2493,
+    "ModuleName" : "microToNanoAddr"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "InstLine" : 257,
+    "InstName" : "nanoRom",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "ModuleLine" : 2482,
+    "ModuleName" : "nanoRom"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "InstLine" : 258,
+    "InstName" : "uRom",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "ModuleLine" : 2471,
+    "ModuleName" : "uRom"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "InstLine" : 352,
+    "InstName" : "uaddrDecode",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "ModuleLine" : 1804,
+    "ModuleName" : "uaddrDecode",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "InstLine" : 1813,
+      "InstName" : "irLineDecod",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "ModuleLine" : 1889,
+      "ModuleName" : "onehotEncoder4"
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "InstLine" : 1818,
+      "InstName" : "pla_lined",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/uaddrPla.sv",
+      "ModuleLine" : 41,
+      "ModuleName" : "pla_lined"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "InstLine" : 354,
+    "InstName" : "sequencer",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "ModuleLine" : 1940,
+    "ModuleName" : "sequencer"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "InstLine" : 360,
+    "InstName" : "excUnit",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "ModuleLine" : 1150,
+    "ModuleName" : "excUnit",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "InstLine" : 1622,
+      "InstName" : "rmPren",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "ModuleLine" : 1916,
+      "ModuleName" : "pren"
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "InstLine" : 1639,
+      "InstName" : "dcrDecoder",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "ModuleLine" : 1889,
+      "ModuleName" : "onehotEncoder4"
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "InstLine" : 1679,
+      "InstName" : "dataIo",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "ModuleLine" : 1704,
+      "ModuleName" : "dataIo"
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "InstLine" : 1683,
+      "InstName" : "alu",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+      "ModuleLine" : 31,
+      "ModuleName" : "fx68kAlu",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+        "InstLine" : 99,
+        "InstName" : "rowDecoder",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+        "ModuleLine" : 624,
+        "ModuleName" : "rowDecoder"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+        "InstLine" : 106,
+        "InstName" : "aluGetOp",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+        "ModuleLine" : 527,
+        "ModuleName" : "aluGetOp"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+        "InstLine" : 107,
+        "InstName" : "ccrTable",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+        "ModuleLine" : 760,
+        "ModuleName" : "ccrTable"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+        "InstLine" : 164,
+        "InstName" : "shifter",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+        "ModuleLine" : 492,
+        "ModuleName" : "aluShifter"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+        "InstLine" : 171,
+        "InstName" : "aluCorf",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68kAlu.sv",
+        "ModuleLine" : 457,
+        "ModuleName" : "aluCorf"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "InstLine" : 365,
+    "InstName" : "nDecoder",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "ModuleLine" : 658,
+    "ModuleName" : "nDecoder3"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "InstLine" : 367,
+    "InstName" : "irdDecode",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "ModuleLine" : 938,
+    "ModuleName" : "irdDecode",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "InstLine" : 945,
+      "InstName" : "irdLines",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+      "ModuleLine" : 1889,
+      "ModuleName" : "onehotEncoder4"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "InstLine" : 369,
+    "InstName" : "busControl",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "ModuleLine" : 2265,
+    "ModuleName" : "busControl"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "InstLine" : 375,
+    "InstName" : "busArbiter",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/fx68k/fx68k.sv",
+    "ModuleLine" : 2181,
+    "ModuleName" : "busArbiter"
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+  "InstLine" : 11,
+  "InstName" : "top",
+  "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+  "ModuleLine" : 11,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 103,
+    "InstName" : "amigaclks",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/amigaclks.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "amigaclks"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 190,
+    "InstName" : "ws2812_inst",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/ws2812.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "ws2812"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 211,
+    "InstName" : "mcu",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/mcu_spi.v",
+    "ModuleLine" : 7,
+    "ModuleName" : "mcu_spi"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 259,
+    "InstName" : "sd_card",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sd_card.v",
+    "ModuleLine" : 13,
+    "ModuleName" : "sd_card",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sd_card.v",
+      "InstLine" : 168,
+      "InstName" : "buffer",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/gowin_dpb/sector_dpram.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "sector_dpram"
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sd_card.v",
+      "InstLine" : 502,
+      "InstName" : "sd_rw",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sd_rw.v",
+      "ModuleLine" : 9,
+      "ModuleName" : "sd_rw",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sd_rw.v",
+        "InstLine" : 138,
+        "InstName" : "u_sdcmd_ctrl",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sdcmd_ctrl.v",
+        "ModuleLine" : 9,
+        "ModuleName" : "sdcmd_ctrl"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 304,
+    "InstName" : "hid",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/hid.v",
+    "ModuleLine" : 7,
+    "ModuleName" : "hid",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/hid.v",
+      "InstLine" : 52,
+      "InstName" : "keymap",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/amiga_keymap.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "keymap"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 331,
+    "InstName" : "sysctrl",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sysctrl.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "sysctrl"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 380,
+    "InstName" : "osd_u8g2",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/osd_u8g2.v",
+    "ModuleLine" : 8,
+    "ModuleName" : "osd_u8g2"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 477,
+    "InstName" : "nanomig",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/nanomig.v",
+    "ModuleLine" : 11,
+    "ModuleName" : "nanomig",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/nanomig.v",
+      "InstLine" : 119,
+      "InstName" : "amiga_clk",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/amiga_clk.v",
+      "ModuleLine" : 4,
+      "ModuleName" : "amiga_clk"
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/nanomig.v",
+      "InstLine" : 212,
+      "InstName" : "cpu_wrapper",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cpu_wrapper.v",
+      "ModuleLine" : 42,
+      "ModuleName" : "cpu_wrapper",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cpu_wrapper.v",
+        "InstLine" : 204,
+        "InstName" : "cpu_inst_p",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68KdotC_Kernel.vhd",
+        "ModuleLine" : 107,
+        "ModuleName" : "TG68KdotC_Kernel",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68KdotC_Kernel.vhd",
+          "InstLine" : 372,
+          "InstName" : "ALU",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68K_ALU.vhd",
+          "ModuleLine" : 30,
+          "ModuleName" : "TG68K_ALU"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/nanomig.v",
+      "InstLine" : 1063,
+      "InstName" : "minimig",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+      "ModuleLine" : 149,
+      "ModuleName" : "minimig",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 437,
+        "InstName" : "AGNUS1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus.v",
+        "ModuleLine" : 54,
+        "ModuleName" : "agnus",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus.v",
+          "InstLine" : 284,
+          "InstName" : "ref1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_refresh.v",
+          "ModuleLine" : 4,
+          "ModuleName" : "agnus_refresh"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus.v",
+          "InstLine" : 296,
+          "InstName" : "dsk1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_diskdma.v",
+          "ModuleLine" : 5,
+          "ModuleName" : "agnus_diskdma"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus.v",
+          "InstLine" : 319,
+          "InstName" : "aud1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_audiodma.v",
+          "ModuleLine" : 37,
+          "ModuleName" : "agnus_audiodma"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus.v",
+          "InstLine" : 340,
+          "InstName" : "bpd1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_bitplanedma.v",
+          "ModuleLine" : 29,
+          "ModuleName" : "agnus_bitplanedma"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus.v",
+          "InstLine" : 368,
+          "InstName" : "spr1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_spritedma.v",
+          "ModuleLine" : 86,
+          "ModuleName" : "agnus_spritedma"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus.v",
+          "InstLine" : 394,
+          "InstName" : "cp1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_copper.v",
+          "ModuleLine" : 58,
+          "ModuleName" : "agnus_copper"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus.v",
+          "InstLine" : 431,
+          "InstName" : "bl1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter.v",
+          "ModuleLine" : 79,
+          "ModuleName" : "agnus_blitter",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter.v",
+            "InstLine" : 341,
+            "InstName" : "barrel_shifter_A",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter_barrelshifter.v",
+            "ModuleLine" : 6,
+            "ModuleName" : "agnus_blitter_barrelshifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter.v",
+            "InstLine" : 397,
+            "InstName" : "barrel_shifter_B",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter_barrelshifter.v",
+            "ModuleLine" : 6,
+            "ModuleName" : "agnus_blitter_barrelshifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter.v",
+            "InstLine" : 442,
+            "InstName" : "bltmt1",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter_minterm.v",
+            "ModuleLine" : 7,
+            "ModuleName" : "agnus_blitter_minterm"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter.v",
+            "InstLine" : 453,
+            "InstName" : "bltfl1",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter_fill.v",
+            "ModuleLine" : 7,
+            "ModuleName" : "agnus_blitter_fill"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter.v",
+            "InstLine" : 576,
+            "InstName" : "address_generator_1",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_blitter_adrgen.v",
+            "ModuleLine" : 4,
+            "ModuleName" : "agnus_blitter_adrgen"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus.v",
+          "InstLine" : 457,
+          "InstName" : "bc1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/agnus_beamcounter.v",
+          "ModuleLine" : 27,
+          "ModuleName" : "agnus_beamcounter"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 486,
+        "InstName" : "PAULA1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula.v",
+        "ModuleLine" : 59,
+        "ModuleName" : "paula",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula.v",
+          "InstLine" : 203,
+          "InstName" : "pu1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_uart.v",
+          "ModuleLine" : 4,
+          "ModuleName" : "paula_uart"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula.v",
+          "InstLine" : 220,
+          "InstName" : "pi1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_intcontroller.v",
+          "ModuleLine" : 4,
+          "ModuleName" : "paula_intcontroller"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula.v",
+          "InstLine" : 243,
+          "InstName" : "pf1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_floppy.v",
+          "ModuleLine" : 67,
+          "ModuleName" : "paula_floppy",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_floppy.v",
+            "InstLine" : 921,
+            "InstName" : "db1",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_floppy_fifo.v",
+            "ModuleLine" : 8,
+            "ModuleName" : "paula_floppy_fifo"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula.v",
+          "InstLine" : 289,
+          "InstName" : "ad1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio.v",
+          "ModuleLine" : 109,
+          "ModuleName" : "paula_audio",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio.v",
+            "InstLine" : 183,
+            "InstName" : "ach0",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_channel.v",
+            "ModuleLine" : 4,
+            "ModuleName" : "paula_audio_channel"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio.v",
+            "InstLine" : 204,
+            "InstName" : "ach1",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_channel.v",
+            "ModuleLine" : 4,
+            "ModuleName" : "paula_audio_channel"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio.v",
+            "InstLine" : 225,
+            "InstName" : "ach2",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_channel.v",
+            "ModuleLine" : 4,
+            "ModuleName" : "paula_audio_channel"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio.v",
+            "InstLine" : 246,
+            "InstName" : "ach3",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_channel.v",
+            "ModuleLine" : 4,
+            "ModuleName" : "paula_audio_channel"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio.v",
+            "InstLine" : 271,
+            "InstName" : "mix",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_mixer.v",
+            "ModuleLine" : 6,
+            "ModuleName" : "paula_audio_mixer",
+            "SubInsts" : [
+             {
+              "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_mixer.v",
+              "InstLine" : 24,
+              "InstName" : "sv0",
+              "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_volume.v",
+              "ModuleLine" : 5,
+              "ModuleName" : "paula_audio_volume"
+             },
+             {
+              "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_mixer.v",
+              "InstLine" : 36,
+              "InstName" : "sv1",
+              "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_volume.v",
+              "ModuleLine" : 5,
+              "ModuleName" : "paula_audio_volume"
+             },
+             {
+              "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_mixer.v",
+              "InstLine" : 48,
+              "InstName" : "sv2",
+              "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_volume.v",
+              "ModuleLine" : 5,
+              "ModuleName" : "paula_audio_volume"
+             },
+             {
+              "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_mixer.v",
+              "InstLine" : 60,
+              "InstName" : "sv3",
+              "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/paula_audio_volume.v",
+              "ModuleLine" : 5,
+              "ModuleName" : "paula_audio_volume"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 545,
+        "InstName" : "USERIO1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/userio.v",
+        "ModuleLine" : 28,
+        "ModuleName" : "userio"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 573,
+        "InstName" : "DENISE1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise.v",
+        "ModuleLine" : 31,
+        "ModuleName" : "denise",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise.v",
+          "InstLine" : 308,
+          "InstName" : "bplm0",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplanes.v",
+          "ModuleLine" : 26,
+          "ModuleName" : "denise_bitplanes",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplanes.v",
+            "InstLine" : 261,
+            "InstName" : "bplshft1",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplane_shifter.v",
+            "ModuleLine" : 27,
+            "ModuleName" : "denise_bitplane_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplanes.v",
+            "InstLine" : 278,
+            "InstName" : "bplshft2",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplane_shifter.v",
+            "ModuleLine" : 27,
+            "ModuleName" : "denise_bitplane_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplanes.v",
+            "InstLine" : 294,
+            "InstName" : "bplshft3",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplane_shifter.v",
+            "ModuleLine" : 27,
+            "ModuleName" : "denise_bitplane_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplanes.v",
+            "InstLine" : 310,
+            "InstName" : "bplshft4",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplane_shifter.v",
+            "ModuleLine" : 27,
+            "ModuleName" : "denise_bitplane_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplanes.v",
+            "InstLine" : 326,
+            "InstName" : "bplshft5",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplane_shifter.v",
+            "ModuleLine" : 27,
+            "ModuleName" : "denise_bitplane_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplanes.v",
+            "InstLine" : 342,
+            "InstName" : "bplshft6",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplane_shifter.v",
+            "ModuleLine" : 27,
+            "ModuleName" : "denise_bitplane_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplanes.v",
+            "InstLine" : 358,
+            "InstName" : "bplshft7",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplane_shifter.v",
+            "ModuleLine" : 27,
+            "ModuleName" : "denise_bitplane_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplanes.v",
+            "InstLine" : 374,
+            "InstName" : "bplshft8",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_bitplane_shifter.v",
+            "ModuleLine" : 27,
+            "ModuleName" : "denise_bitplane_shifter"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise.v",
+          "InstLine" : 335,
+          "InstName" : "plfm0",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_playfields.v",
+          "ModuleLine" : 8,
+          "ModuleName" : "denise_playfields"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise.v",
+          "InstLine" : 351,
+          "InstName" : "sprm0",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites.v",
+          "ModuleLine" : 24,
+          "ModuleName" : "denise_sprites",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites.v",
+            "InstLine" : 121,
+            "InstName" : "sps0",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites_shifter.v",
+            "ModuleLine" : 9,
+            "ModuleName" : "denise_sprites_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites.v",
+            "InstLine" : 139,
+            "InstName" : "sps1",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites_shifter.v",
+            "ModuleLine" : 9,
+            "ModuleName" : "denise_sprites_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites.v",
+            "InstLine" : 157,
+            "InstName" : "sps2",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites_shifter.v",
+            "ModuleLine" : 9,
+            "ModuleName" : "denise_sprites_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites.v",
+            "InstLine" : 175,
+            "InstName" : "sps3",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites_shifter.v",
+            "ModuleLine" : 9,
+            "ModuleName" : "denise_sprites_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites.v",
+            "InstLine" : 193,
+            "InstName" : "sps4",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites_shifter.v",
+            "ModuleLine" : 9,
+            "ModuleName" : "denise_sprites_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites.v",
+            "InstLine" : 211,
+            "InstName" : "sps5",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites_shifter.v",
+            "ModuleLine" : 9,
+            "ModuleName" : "denise_sprites_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites.v",
+            "InstLine" : 229,
+            "InstName" : "sps6",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites_shifter.v",
+            "ModuleLine" : 9,
+            "ModuleName" : "denise_sprites_shifter"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites.v",
+            "InstLine" : 247,
+            "InstName" : "sps7",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_sprites_shifter.v",
+            "ModuleLine" : 9,
+            "ModuleName" : "denise_sprites_shifter"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise.v",
+          "InstLine" : 372,
+          "InstName" : "spm0",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_spritepriority.v",
+          "ModuleLine" : 5,
+          "ModuleName" : "denise_spritepriority"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise.v",
+          "InstLine" : 386,
+          "InstName" : "clut0",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_colortable.v",
+          "ModuleLine" : 7,
+          "ModuleName" : "denise_colortable",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_colortable.v",
+            "InstLine" : 39,
+            "InstName" : "clut",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_colortable_ram_mf.v",
+            "ModuleLine" : 3,
+            "ModuleName" : "denise_colortable_ram_mf"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise.v",
+          "InstLine" : 405,
+          "InstName" : "ham0",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_hamgenerator.v",
+          "ModuleLine" : 6,
+          "ModuleName" : "denise_hamgenerator",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_hamgenerator.v",
+            "InstLine" : 38,
+            "InstName" : "clut",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_colortable_ram_mf.v",
+            "ModuleLine" : 3,
+            "ModuleName" : "denise_colortable_ram_mf"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise.v",
+          "InstLine" : 420,
+          "InstName" : "col0",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/denise_collision.v",
+          "ModuleLine" : 4,
+          "ModuleName" : "denise_collision"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 601,
+        "InstName" : "CIAA1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciaa.v",
+        "ModuleLine" : 80,
+        "ModuleName" : "ciaa",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciaa.v",
+          "InstLine" : 311,
+          "InstName" : "cnt",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_int.v",
+          "ModuleLine" : 1,
+          "ModuleName" : "cia_int"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciaa.v",
+          "InstLine" : 331,
+          "InstName" : "tmra",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_timera.v",
+          "ModuleLine" : 1,
+          "ModuleName" : "cia_timera"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciaa.v",
+          "InstLine" : 351,
+          "InstName" : "tmrb",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_timerb.v",
+          "ModuleLine" : 1,
+          "ModuleName" : "cia_timerb"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciaa.v",
+          "InstLine" : 370,
+          "InstName" : "tmrd",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_timerd.v",
+          "ModuleLine" : 6,
+          "ModuleName" : "cia_timerd"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 627,
+        "InstName" : "CIAB1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciab.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "ciab",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciab.v",
+          "InstLine" : 175,
+          "InstName" : "cnt",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_int.v",
+          "ModuleLine" : 1,
+          "ModuleName" : "cia_int"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciab.v",
+          "InstLine" : 195,
+          "InstName" : "tmra",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_timera.v",
+          "ModuleLine" : 1,
+          "ModuleName" : "cia_timera"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciab.v",
+          "InstLine" : 214,
+          "InstName" : "tmrb",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_timerb.v",
+          "ModuleLine" : 1,
+          "ModuleName" : "cia_timerb"
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ciab.v",
+          "InstLine" : 233,
+          "InstName" : "tmrd",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/cia_timerd.v",
+          "ModuleLine" : 6,
+          "ModuleName" : "cia_timerd"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 648,
+        "InstName" : "CPU1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig_m68k_bridge.v",
+        "ModuleLine" : 30,
+        "ModuleName" : "minimig_m68k_bridge"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 691,
+        "InstName" : "BMAP1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig_bankmapper.v",
+        "ModuleLine" : 10,
+        "ModuleName" : "minimig_bankmapper"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 709,
+        "InstName" : "RAM1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig_sram_bridge.v",
+        "ModuleLine" : 8,
+        "ModuleName" : "minimig_sram_bridge"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 764,
+        "InstName" : "GARY1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/gary.v",
+        "ModuleLine" : 49,
+        "ModuleName" : "gary"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 816,
+        "InstName" : "GAYLE1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/gayle.v",
+        "ModuleLine" : 21,
+        "ModuleName" : "gayle",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/gayle.v",
+          "InstLine" : 144,
+          "InstName" : "ide0",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ide.v",
+          "ModuleLine" : 31,
+          "ModuleName" : "ide",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ide.v",
+            "InstLine" : 287,
+            "InstName" : "io_buf0",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/gowin_dpb/ide_dpram.v",
+            "ModuleLine" : 10,
+            "ModuleName" : "ide_dpram"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ide.v",
+            "InstLine" : 308,
+            "InstName" : "io_buf1",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/gowin_dpb/ide_dpram.v",
+            "ModuleLine" : 10,
+            "ModuleName" : "ide_dpram"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/gayle.v",
+          "InstLine" : 175,
+          "InstName" : "ide1",
+          "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ide.v",
+          "ModuleLine" : 31,
+          "ModuleName" : "ide",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ide.v",
+            "InstLine" : 287,
+            "InstName" : "io_buf0",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/gowin_dpb/ide_dpram.v",
+            "ModuleLine" : 10,
+            "ModuleName" : "ide_dpram"
+           },
+           {
+            "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/ide.v",
+            "InstLine" : 308,
+            "InstName" : "io_buf1",
+            "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/gowin_dpb/ide_dpram.v",
+            "ModuleLine" : 10,
+            "ModuleName" : "ide_dpram"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig.v",
+        "InstLine" : 841,
+        "InstName" : "CONTROL1",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/minimig_syscontrol.v",
+        "ModuleLine" : 17,
+        "ModuleName" : "minimig_syscontrol"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/nanomig.v",
+      "InstLine" : 1181,
+      "InstName" : "AMBER",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/minimig-aga/Amber.v",
+      "ModuleLine" : 45,
+      "ModuleName" : "Amber"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 713,
+    "InstName" : "sdram",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/sdram.sv",
+    "ModuleLine" : 35,
+    "ModuleName" : "sdram"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 756,
+    "InstName" : "cache_inst",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/cache.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "cache"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 805,
+    "InstName" : "flash",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/flash_dspi.v",
+    "ModuleLine" : 14,
+    "ModuleName" : "flash"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 909,
+    "InstName" : "video_analyzer",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/video_analyzer.v",
+    "ModuleLine" : 7,
+    "ModuleName" : "video_analyzer"
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 924,
+    "InstName" : "hdmi",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/hdmi.sv",
+    "ModuleLine" : 8,
+    "ModuleName" : "hdmi",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/hdmi.sv",
+      "InstLine" : 223,
+      "InstName" : "true_hdmi_output.packet_picker",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/packet_picker.sv",
+      "ModuleLine" : 4,
+      "ModuleName" : "packet_picker",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/packet_picker.sv",
+        "InstLine" : 51,
+        "InstName" : "audio_clock_regeneration_packet",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/audio_clock_regeneration_packet.sv",
+        "ModuleLine" : 5,
+        "ModuleName" : "audio_clock_regeneration_packet"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/packet_picker.sv",
+        "InstLine" : 131,
+        "InstName" : "audio_sample_packet",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/audio_sample_packet.sv",
+        "ModuleLine" : 8,
+        "ModuleName" : "audio_sample_packet"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/packet_picker.sv",
+        "InstLine" : 136,
+        "InstName" : "auxiliary_video_information_info_frame",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/auxiliary_video_information_info_frame.sv",
+        "ModuleLine" : 5,
+        "ModuleName" : "auxiliary_video_information_info_frame"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/packet_picker.sv",
+        "InstLine" : 139,
+        "InstName" : "source_product_description_info_frame",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/source_product_description_info_frame.sv",
+        "ModuleLine" : 5,
+        "ModuleName" : "source_product_description_info_frame"
+       },
+       {
+        "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/packet_picker.sv",
+        "InstLine" : 142,
+        "InstName" : "audio_info_frame",
+        "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/audio_info_frame.sv",
+        "ModuleLine" : 5,
+        "ModuleName" : "audio_info_frame"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/hdmi.sv",
+      "InstLine" : 225,
+      "InstName" : "true_hdmi_output.packet_assembler",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/packet_assembler.sv",
+      "ModuleLine" : 4,
+      "ModuleName" : "packet_assembler"
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/hdmi.sv",
+      "InstLine" : 276,
+      "InstName" : "tmds_gen[0].tmds_channel",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/tmds_channel.sv",
+      "ModuleLine" : 4,
+      "ModuleName" : "tmds_channel"
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/hdmi.sv",
+      "InstLine" : 276,
+      "InstName" : "tmds_gen[1].tmds_channel",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/tmds_channel.sv",
+      "ModuleLine" : 4,
+      "ModuleName" : "tmds_channel"
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/hdmi.sv",
+      "InstLine" : 276,
+      "InstName" : "tmds_gen[2].tmds_channel",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/tmds_channel.sv",
+      "ModuleLine" : 4,
+      "ModuleName" : "tmds_channel"
+     },
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/hdmi.sv",
+      "InstLine" : 280,
+      "InstName" : "serializer",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/hdmi/serializer.sv",
+      "ModuleLine" : 3,
+      "ModuleName" : "serializer"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tang-nano20K/top.sv",
+    "InstLine" : 949,
+    "InstName" : "drive_sound_inst",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/misc/drive_sounds.sv",
+    "ModuleLine" : 12,
+    "ModuleName" : "drive_sound"
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68K.vhd",
+  "InstLine" : 29,
+  "InstName" : "TG68K",
+  "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68K.vhd",
+  "ModuleLine" : 29,
+  "ModuleName" : "TG68K",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68K.vhd",
+    "InstLine" : 141,
+    "InstName" : "cpu1",
+    "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68KdotC_Kernel.vhd",
+    "ModuleLine" : 107,
+    "ModuleName" : "TG68KdotC_Kernel",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68KdotC_Kernel.vhd",
+      "InstLine" : 372,
+      "InstName" : "ALU",
+      "ModuleFile" : "C:/GitHub/NanoMig-TN20K-Deluxe-Edition/src/tg68k/TG68K_ALU.vhd",
+      "ModuleLine" : 30,
+      "ModuleName" : "TG68K_ALU"
+     }
+    ]
+   }
+  ]
+ }
+]
