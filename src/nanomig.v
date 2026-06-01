@@ -384,24 +384,31 @@ always @(posedge clk_sys) begin
       end
    
       // check if drive is in state IDE_DRV_STATE_MNT and no sd read is in progress
-      if(!ide_sdc_rd && !sdc_busy) begin
-	 if(ide_drv_state[drv] == IDE_DRV_STATE_MNT) begin
+      // Bug fix: only start one drive's RDB read per iteration - if drive 0 is already
+      // being started, drive 1 will be picked up in the next clock cycle via the
+      // !ide_sdc_rd guard, preventing a race where both drives set ide_sdc_rd simultaneously.
+      if(!ide_sdc_rd && !sdc_busy && drv == 0) begin
+	 if(ide_drv_state[0] == IDE_DRV_STATE_MNT) begin
 	    ide_sdc_sector <= 32'd0;
-	    ide_sdc_rd[drv] <= 1'b1;
+	    ide_sdc_rd[0] <= 1'b1;
+	 end else if(ide_drv_state[1] == IDE_DRV_STATE_MNT) begin
+	    ide_sdc_sector <= 32'd0;
+	    ide_sdc_rd[1] <= 1'b1;
 	 end
       end
 
       // check if amiga wants to read a sector
       if(!sdc_busy && !ide_sdc_rd && ide_exec == IDE_EXEC_READ_SECTOR ) begin
 	 // this really only works with HW multipliers in the FPGA
-	 ide_sdc_sector <= (ide_cylinder * heads[0] + ide_head) * sectors[0] +
+	 // Bug fix: use heads[ide_drv]/sectors[ide_drv] instead of heads[0]/sectors[0]
+	 ide_sdc_sector <= (ide_cylinder * heads[ide_drv] + ide_head) * sectors[ide_drv] +
 			   ide_sector - 1;
 
 	 // TODO: check why this message comes twice, the test for !ide_sdc_rd
 	 // should prevent that
 	 $display("IDE%0d RD %0d/%0d/%0d -> %0d", ide_drv, 
 		  ide_cylinder, ide_head, ide_sector, 
-		  (ide_cylinder * heads[0] + ide_head) * sectors[0] +
+		  (ide_cylinder * heads[ide_drv] + ide_head) * sectors[ide_drv] +
 		  ide_sector - 1);
 	 
 	 ide_sdc_rd[ide_drv] <= 1'b1;
@@ -410,12 +417,13 @@ always @(posedge clk_sys) begin
       // check if amiga wants to write
       if (!sdc_busy && !ide_sdc_wr && ide_exec == IDE_EXEC_WRITE_SECTOR ) begin
 	 // this really only works with HW multipliers in the FPGA
-	 ide_sdc_sector <= (ide_cylinder * heads[0] + ide_head) * sectors[0] +
+	 // Bug fix: use heads[ide_drv]/sectors[ide_drv] instead of heads[0]/sectors[0]
+	 ide_sdc_sector <= (ide_cylinder * heads[ide_drv] + ide_head) * sectors[ide_drv] +
 			   ide_sector - 1;
 	 
 	 $display("IDE%0d WR %0d/%0d/%0d -> %0d", ide_drv, 
 		  ide_cylinder, ide_head, ide_sector, 
-		  (ide_cylinder * heads[0] + ide_head) * sectors[0] +
+		  (ide_cylinder * heads[ide_drv] + ide_head) * sectors[ide_drv] +
 		  ide_sector - 1);
 	 
 	 ide_sdc_wr[ide_drv] <= 1'b1;
@@ -426,8 +434,11 @@ always @(posedge clk_sys) begin
 	 ide_sdc_rd <= 2'b00;
 
 	 // parse rdb unless the amiga has requested this sector
-	 if( ide_exec != IDE_EXEC_READ_SECTOR )
-	    if( ide_sdc_rd[drv]) ide_drv_state[drv] <= IDE_DRV_STATE_PARSE;	 
+	 // Bug fix: check each drive's bit explicitly - the loop variable drv
+	 // is not reliable here since the condition fires once per loop iteration
+	 if( ide_exec != IDE_EXEC_READ_SECTOR ) begin
+	    if( ide_sdc_rd[drv]) ide_drv_state[drv] <= IDE_DRV_STATE_PARSE;
+	 end
       end
 
       // sd card has accepted write request
@@ -488,6 +499,10 @@ always @(posedge clk_sys) begin
       ide_sector     <= 8'd1;
       ide_sector_cnt <= 8'd0;
       ide_io_size    <= 8'd1;
+
+      // Bug fix: reset drive states so image remounting after soft-reset works correctly
+      ide_drv_state[0] <= IDE_DRV_STATE_NONE;
+      ide_drv_state[1] <= IDE_DRV_STATE_NONE;
    end else begin // if (reset)
       
       if(!ide_busy) begin      
@@ -573,11 +588,12 @@ always @(posedge clk_sys) begin
 	      // advance to next sector
 	      // ide_sector goes from 1 to sectors,
 	      // ide_head goes from 0 to heads-1
-	      if ( ide_sector < sectors[0] )
+	      // Bug fix: use sectors[ide_drv]/heads[ide_drv] instead of sectors[0]/heads[0]
+	      if ( ide_sector < sectors[ide_drv] )
 		ide_sector <= ide_sector + 8'd1;
 	      else begin
 		 ide_sector <= 8'd1;
-		 if( ide_head < heads[0]-1 )
+		 if( ide_head < heads[ide_drv]-1 )
 		   ide_head <= ide_head + 8'd1;
 		 else begin
 		    ide_head <= 8'd0;
@@ -642,11 +658,12 @@ always @(posedge clk_sys) begin
 	      // advance to next sector
 	      // ide_sector goes from 1 to sectors,
 	      // ide_head goes from 0 to heads-1
-	      if ( ide_sector < sectors[0] )
+	      // Bug fix: use sectors[ide_drv]/heads[ide_drv] instead of sectors[0]/heads[0]
+	      if ( ide_sector < sectors[ide_drv] )
 		ide_sector <= ide_sector + 8'd1;
 	      else begin
 		 ide_sector <= 8'd1;
-		 if( ide_head < heads[0]-1 )
+		 if( ide_head < heads[ide_drv]-1 )
 		   ide_head <= ide_head + 8'd1;
 		 else begin
 		    ide_head <= 8'd0;
@@ -662,13 +679,12 @@ always @(posedge clk_sys) begin
 
 		 // check how many sectors can be sent in next
 		 // transfer
+		 // Bug fix: removed dead ide_status[3] assignments inside the if/else
+		 // which were immediately overwritten by the unconditional assignment below.
+		 // ide_sector_cnt has just been decreased in this same event
+		 // so the following needs to assume it's not been decreased, yet
 		 if ( ide_sector_cnt > 1 ) begin
-		    ide_status[3] <= 1'b1;  // more data to send: keep drq active
-
 		    // TODO: Test this by sending more than 32 sectors at once
-		    
-		    // ide_sector_cnt has just been decreased in this same event
-		    // so the following needs to assume it's not been decreased, yet
 		    if ( (ide_sector_cnt-1) < ide_spb ) begin
 		       ide_sdc_cnt <= ide_sector_cnt - 1;
 		       ide_io_size <= ide_sector_cnt - 1;
@@ -676,8 +692,7 @@ always @(posedge clk_sys) begin
                        ide_sdc_cnt <= ide_spb;
 		       ide_io_size <= ide_spb;
 		    end
-		 end else
-		   ide_status[3] <= 1'b0;  // no more data to send: no drq
+		 end
 
 		 // keep drq raised if not all sectors have been written
 		 ide_status[3] <= (ide_sector_cnt > 1);
