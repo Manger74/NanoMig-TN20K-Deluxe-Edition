@@ -367,6 +367,12 @@ reg [31:0] total_sectors[DRIVES];
 always @(posedge clk_sys) begin
    integer drv;
 
+   // reset drive states here (only one always block may drive ide_drv_state)
+   if(reset) begin
+      ide_drv_state[0] <= IDE_DRV_STATE_NONE;
+      ide_drv_state[1] <= IDE_DRV_STATE_NONE;
+   end else
+
    for(drv = 0; drv < DRIVES; drv = drv+1) begin
       if (sdc_img_mounted[4+drv]) begin
 	 if( !sdc_img_size ) begin
@@ -499,10 +505,8 @@ always @(posedge clk_sys) begin
       ide_sector     <= 8'd1;
       ide_sector_cnt <= 8'd0;
       ide_io_size    <= 8'd1;
-
-      // Bug fix: reset drive states so image remounting after soft-reset works correctly
-      ide_drv_state[0] <= IDE_DRV_STATE_NONE;
-      ide_drv_state[1] <= IDE_DRV_STATE_NONE;
+      // Note: ide_drv_state reset is handled in the always block above
+      // that owns ide_drv_state to avoid multiple-driver errors
    end else begin // if (reset)
       
       if(!ide_busy) begin      
